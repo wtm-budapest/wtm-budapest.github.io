@@ -412,7 +412,7 @@ we were well fed and drunk all the time!</p>
         	<div class="col-lg-6 col-sm-7 wow fadeInLeft">
             	<div class="contact-info-box address clearfix">
                 	<h3><i class=" icon-map-marker"></i>Helyszín:</h3>
-                	<span>Budapesti Műszaki és Gazdaságtudományi Egyetem <br>1117 Budapest, Magyar tudósok krt. 2. <br> QB F14 (B szárny, földszint 14-es terem)</span>
+                	<span>Budapesti Műszaki és Gazdaságtudományi Egyetem <br>1117 Budapest, Magyar tudósok krt. 2. <br> I E220 (E szárny, 2. emelet 20-as terem)</span>
                 </div>
                <!-- <div class="contact-info-box phone clearfix">
                 	<h3><i class="fa-phone"></i>Phone:</h3>
@@ -456,16 +456,16 @@ we were well fed and drunk all the time!</p>
 						function init_map(){
 							var myOptions = {
 								zoom:15,
-								center:new google.maps.LatLng(47.4726459,19.060093400000028),
+								center:new google.maps.LatLng(47.472608, 19.059803),
 								mapTypeId: google.maps.MapTypeId.ROADMAP
 							};
 							map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
 							marker = new google.maps.Marker({
 								map: map,
-								position: new google.maps.LatLng(47.4726459,19.060093400000028)
+								position: new google.maps.LatLng(47.472608, 19.059803)
 							});
 							infowindow = new google.maps.InfoWindow({
-								content:'<strong>BME QB F14</strong> (B szárny, földszint 14-es terem)<br>Magyar tudósok krt. 2<br>1117 Budapest<br>'
+								content:'<strong>BME I E220</strong> (E szárny, 2. emelet 20-as terem)<br>Magyar tudósok krt. 2<br>1117 Budapest<br>'
 							});
 							google.maps.event.addListener(marker, 'click', function(){
 								infowindow.open(map,marker);
